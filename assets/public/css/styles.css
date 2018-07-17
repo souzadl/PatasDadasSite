@@ -1,0 +1,1154 @@
+
+
+/* ---------------- HEADER ---------------- */ 
+
+    header { position: absolute; z-index: 9999; width: 100%; height: auto; padding: 2em 0; }
+    header#desktop { display:; }
+    header#mobile { display:none !important; background: #FFF; box-shadow: 0 0 2px #666; }
+
+/* ---------------- HEADER DESKTOP ---------------- */ 
+
+    header#desktop .left { float: left; } 
+    header#desktop .left h1 { float: left; }
+    header#desktop .left h1 p { float: left; display: none }
+    header#desktop .left h1 img { width: 117px; float: left; }
+
+    header#desktop .right { float: right; margin: 2em 0 0; }
+    header#desktop .right a { float: left; margin: 0 2em 0 0; font-size: 1.2em; color: #372821; text-transform: uppercase;   }
+    header#desktop .right a.active { color: #FFF;  }
+
+    header#desktop .right a.facebook { float: left; border: 1px solid transparent; border-radius: 50%; width: 27px; height: 27px; margin: -6px 1em 0 0;   }
+    header#desktop .right a.facebook:hover { background: #372821; color: #FFF}
+    header#desktop .right a.facebook i { float: left; font-size: 1.3em; padding: 7px 0; width: 100%; text-align: center;   }
+
+    header#desktop .right a.experimental { float: left; background: #6cb702; color: #FFF; border-radius: 5px; padding: 0.5em 1em; font-family: 'Roboto', sans-serif; font-size:1.1em; margin: -3px 0 0 0 }
+    header#desktop .right a.experimental:hover { opacity: .7; text-decoration: none; }
+
+
+/* ---------------- HEADER MOBILE ---------------- */ 
+    header#mobile { position: fixed; z-index: 999999;  height: 63px; padding: 0; }
+    header#mobile .left { float: left; }
+    header#mobile .left h1 { float: left; }
+    header#mobile .left h1 p { float: left; display: none }
+    header#mobile .left h1 img { width: 42px; float: left; margin: 11px 0 0 101px; }
+
+    header#mobile .right { margin: 23px 0 0; position: fixed; right: 0; z-index: 999999; }
+    header#mobile .right a { float: left; margin: 0 2em 0 0; font-size: 1.2em; color: #372821; text-transform: uppercase;   }
+    header#mobile .right a.facebook { float: left; border-radius: 50%; width: 27px; height: 27px; margin: -6px 2em 0 0;   }
+    header#mobile .right a.roxo-facebook {  }
+    header#mobile .right a.white-facebook {  color: #FFF }
+    header#mobile .right a.white-facebook:hover { background: #FFF !important; color: #372821 !important }
+
+
+    header#mobile .right a.facebook:hover { background: #372821; color: #FFF }
+    header#mobile .right a.facebook i { float: left; font-size: 1.3em; padding: 7px 0; width: 100%; text-align: center;   }
+
+    header#mobile .right a.experimental { float: left; background: #6cb702; color: #FFF; border-radius: 5px; padding: 0.5em 1em; font-family: 'Roboto', sans-serif; font-size:1.1em; margin: -3px 0 0 0 }
+    header#mobile .right a.experimental:hover { opacity: .7; text-decoration: none; }
+
+
+
+    /* ==== MENU MOBILE ==== */ 
+    header#mobile .header-fixo {position: absolute; z-index: 99999; top: 0; left: 0; width: 100%; height: auto; }
+    header#mobile #menu { display:none; }
+    header#mobile .black { width: 100%; height: 100%; margin: 0; position: fixed; z-index: 1;  background: #372821; }
+    header#mobile .menu_phone { display:block; position: fixed; z-index: 999; width: 35px; height: auto; cursor:pointer; padding:3.1em 2em 3.3em; margin:0;   }
+    header#mobile .on-swift { background:; }
+    header#mobile .off-swift { background: none }
+
+    header#mobile .header-fixo #menu { margin: 0; font-size: 2.6em; float: left; width: 350px; height: 100%; background:; position: relative; z-index: 3; }
+    header#mobile .header-fixo #menu .big { margin: 80px 0; float: left; position: relative;z-index: 3; }
+    header#mobile .header-fixo #menu .big a { width: 100%; text-align: left; position: relative; z-index: 998; float: left; color: #FFF; margin: 0 0 0 0;padding: 5% 15%; cursor: pointer; border-left: 10px solid transparent; font-weight: 300; }
+    header#mobile .header-fixo #menu .big a:hover { border-left: 10px solid #FFF; font-weight: 900   }
+
+
+    /* === ICON MENU HAMBURGUER ANIMATED  === */
+    header#mobile #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after { cursor: pointer; border-radius: 1px; height: 2px; width: 35px; background: #372821; position: absolute; display: block;content: '';  }
+    header#mobile #nav-toggle span:before { top: -12px; }
+    header#mobile #nav-toggle span:after { bottom: -12px;  }
+    header#mobile #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after { transition: all 500ms ease-in-out; }
+    header#mobile #nav-toggle.active span { background-color: transparent;  }
+    header#mobile #nav-toggle.active span:before, #nav-toggle.active span:after { top: 0; }
+    header#mobile #nav-toggle.active span:before { transform: rotate(45deg); }
+    header#mobile #nav-toggle.active span:after { transform: rotate(-45deg);  }
+
+    header#mobile .off-swift span {   }
+    header#mobile .off-swift span:before { background: #FFF !important;   }
+    header#mobile .off-swift span:after { background: #FFF !important;   }
+
+
+
+
+/* ---------------- SWIPER ---------------- */
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+
+/* ---------------- SETOR  ---------------- */
+    #setor1 { width: 100%; height: 100vh; position: relative; background:#444 ; float: left; z-index: 999}
+  
+
+
+
+    #ancora {
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        background: ;
+        left: 0;
+        top: 340px;
+        z-index: 9999;
+    }
+    #ancora2 {
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        background: ;
+        left: 0;
+        bottom: 0;
+        z-index: 9999;
+    }
+
+/* ---------------- SETOR  ---------------- */
+    #adotaveis { width: 100%; height: auto; position: relative; background:#FFF ; float: left; z-index: 999}
+
+    #adotaveis #container { width: 100%; height: 380px; position: relative; background:#fec901 ; float: left; z-index:;}
+
+    #adotaveis #container .lay1 { margin: 50px 0 0 0  }
+
+    #adotaveis #listagem {width: 100%; height: auto; position: relative; background:#444 ; float: left; z-index: 999}
+    #adotaveis #listagem .menuLateral {width:40px; padding: 0 15px; background:#FFF; height: 100%; position: absolute; z-index: 9; }
+    #adotaveis #listagem .menuLateral.left {top: 0; left: 0; border-right: 1px solid #f2f3f9 }
+    #adotaveis #listagem .menuLateral.right {top: 0; right: 0; border-left: 1px solid #f2f3f9 }
+
+    #adotaveis #listagem .menuLateral.fixed { position: fixed; }
+    #adotaveis #listagem .menuLateral.absolute { position: absolute; }
+
+    
+    #adotaveis #listagem .menuLateral li {width: 100%; float: left; color: #372822; opacity: .3; transition: all 500ms ease-in-out;   }
+    #adotaveis #listagem .menuLateral li.active { opacity: 1  }
+    #adotaveis #listagem .menuLateral li:hover { opacity: 1  }
+    #adotaveis #listagem .menuLateral li a { width: 100%; float: left; color: #372822;  }
+    #adotaveis #listagem .menuLateral li i {width: 24px; height: 19px; float: left; background: url(../img/patas-dadas-adotaveis-elements.png); margin: 17px 0 5px 8px; background-position: -1px -1px;    }
+    #adotaveis #listagem .menuLateral li p { width: 100%; text-align: center; float: left;  }
+    #adotaveis #listagem .menuLateral li.excep { opacity: 1; margin: 17px 0 0 0;  }
+    #adotaveis #listagem .menuLateral li.excep p { font-size: 0.8em !important  }
+
+    #adotaveis #listagem .menuLateral .line {width: 100%; height: 1px; float: left; background: #f2f3f9; margin: 13px 0 0 0; }
+
+    #adotaveis #listagem .menuLateral li i.todos { width: 24px; height: 19px; margin: 17px 0 5px 8px; background-position: -1px -1px;  }
+    #adotaveis #listagem .menuLateral li i.caes { width: 24px; height: 21px; margin: 17px 0 5px 8px; background-position: -1px -78px;  }
+    #adotaveis #listagem .menuLateral li i.gatos { width: 20px; height: 18px; margin: 17px 0 5px 10px; background-position: -4px -139px;  }
+    #adotaveis #listagem .menuLateral li i.tamanho-p { width: 24px; height: 21px; margin: 17px 0 5px 7px; background-position: -1px -220px;  }
+    #adotaveis #listagem .menuLateral li i.tamanho-m { width: 24px; height: 19px; margin: 17px 0 5px 7px; background-position: -1px -279px;  }
+    #adotaveis #listagem .menuLateral li i.tamanho-g { width: 24px; height: 19px; margin: 17px 0 5px 7px; background-position: -1px -338px;  }
+    #adotaveis #listagem .menuLateral li i.femeas { width: 14px; height: 24px; margin: 17px 0 5px 13px; background-position: -8px -424px;  }
+    #adotaveis #listagem .menuLateral li i.machos { width: 20px; height: 19px; margin: 17px 0 5px 9px; background-position: -4px -486px;  }
+
+
+    #adotaveis #listagem .menuLateral li i.racao { width: 30px; height: 19px; margin: 17px 0 5px 5px; background-position: -67px -153px;  }
+    #adotaveis #listagem .menuLateral li i.vacinas { width: 29px; height: 15px; margin: 17px 0 5px 6px; background-position: -67px -214px;  }
+    #adotaveis #listagem .menuLateral li i.castracao { width: 24px; height: 25px; margin: 17px 0 5px 8px; background-position: -70px -268px;  }
+    #adotaveis #listagem .menuLateral li i.antipulgas { width: 24px; height: 24px; margin: 17px 0 5px 8px; background-position: -70px -329px;  }
+
+    #adotaveis #listagem .menuLateral li.setasubir i { width: 20px; height: 29px; margin: 17px 0 5px 8px; background-position: -220px -453px;  }
+    #adotaveis #listagem .menuLateral li.setasubir { width: 50%; bottom: 0; margin-bottom: 15%; position: absolute; cursor: pointer;  }
+
+    #menuLateral .mobile { display: none; }
+
+
+
+
+
+    #adotaveis #listagem .content {width:100%; background:#FFF; float: left; padding-top: 4% }
+
+    #adotaveis #listagem .content h2 {    
+        color: #372821;
+        float: left;
+        font-family: 'Pacifico',cursive;
+        font-size: 3em;
+        margin: -3% 2% 3% 0;
+        width: 90%; padding: 0 0 0 10%;
+        height: 70px;
+        border-bottom: 1px solid #f2f3f9;
+    }
+    #adotaveis #listagem .content h2.absolute { position: relative; }    
+    #adotaveis #listagem .content h2.fixed {
+        position: fixed;
+        top: 0;
+        margin: 0;
+        z-index: 1;
+        background: #FFF;
+    }    
+
+
+
+    #adotaveis #listagem .content .row { width: 85% !important; margin: 0 7.5% !important; }
+    #adotaveis #listagem .content ul {width:100%; float: left;}
+    #adotaveis #listagem .content ul li {width:21%; height: 340px; background: #372821; margin: 0 2% 4%; float: left; border-radius:10px; display: block; overflow: hidden; position: relative;  }
+
+    #adotaveis #listagem .content ul li figure { width: 100%; height: 100%; float: left; background-size: cover !important; background-position: center !important;
+      transition: all 1500ms ease-out; margin: 0; padding: 0; position: relative; z-index: 1}
+
+    #adotaveis #listagem .content ul li:hover > figure { 
+       -webkit-transform: scale(1.15, 1.15);
+       -moz-transform: scale(1.15, 1.15);
+       -ms-transform: scale(1.15, 1.15);
+       -o-transform: scale(1.15, 1.15);
+       transform: scale(1.15, 1.15);
+       opacity: .2;
+    }
+
+    #adotaveis #listagem .content ul li .box { width: 100%; height: 100%; background:; float: left; transition: all 500ms ease-out;position: absolute; z-index: 2; opacity: 0; top: 0; left: 0 }
+
+    #adotaveis #listagem .content ul li:hover > .box { opacity: 1 }
+
+
+    #adotaveis #listagem .content ul li .box .top { width: 100%; position: absolute; top: 50%; margin-top:-40px;  text-align: center }
+    #adotaveis #listagem .content ul li .box .top h3 { width: 100%; text-align: center; font-size: 3em; color: #FFF; font-family: 'Pacifico', cursive; float: left; cursor: default;}
+    #adotaveis #listagem .content ul li .box .top i { width: 38px; height: 38px; background: url(../img/patas-dadas-adotaveis-elements.png); position: absolute; top: 0; left: 50%; margin: 51px 0 0 -18px; background-position: -63px -386px; transition: all 200ms ease-out; }
+     #adotaveis #listagem .content ul li:hover .box .top i {
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    #adotaveis #listagem .content ul li:hover > .bottom { opacity: 1 }
+    #adotaveis #listagem .content ul li .bottom {opacity: 0; width: 100%; position: absolute; bottom: 5%; left: 50%; margin-left: -74px; z-index: 3 }
+    #adotaveis #listagem .content ul li .bottom p { font-size: 1.2em; color: #FFF; float: left; cursor: default; }
+    #adotaveis #listagem .content ul li .bottom i { background: url(../img/patas-dadas-adotaveis-elements.png); float: left; margin: 0 0 0 1em; transition: all 200ms ease-out; opacity: .6 }
+    #adotaveis #listagem .content ul li .bottom a { float: left; }
+
+    #adotaveis #listagem .content ul li .bottom i.facebook { width: 6px; height: 14px; background-position: -8px -543px; }
+    #adotaveis #listagem .content ul li .bottom i.twitter { width: 16px; height: 16px; background-position: -34px -543px; }
+    #adotaveis #listagem .content ul li .bottom i.gplus { width: 15px; height: 16px; background-position: -67px -543px; }
+
+    #adotaveis #listagem .content ul li .bottom i:hover { opacity: 1 }
+
+
+
+
+
+
+
+/* ---------------- SETOR  ---------------- */
+    #adotaveis-interna { width: 100%; height: auto; position: relative; background:#FFF ; float: left; z-index: 9998}
+
+    #adotaveis-interna .top { width: 100%; height: 390px; position: relative; background:#fec901; float: left; z-index: 999}
+
+    #adotaveis-interna .top h2 { width: 100%; height: auto; font-size: 11em; margin: 90px 0 0; color: #372821; text-align: center; font-family: 'Pacifico', cursive; }
+    #adotaveis-interna .top figure  { width: 222px; height: 222px; border-radius: 50%; float: left; background-size: cover !important; background-position: center !important; position: absolute; top:170px; left: 50%; margin:0 0 0 -111px; padding: 0}
+
+    #adotaveis-interna .top a { width: 40px; height: 21px; background: url(../img/patasdadas-swiper-setas2.png); position: absolute; 
+    top: 100%; transition: all 200ms ease-out; }
+    #adotaveis-interna .top a:hover { opacity: .6  }
+
+    #adotaveis-interna .top a.next { right: 5%; background-position: -41px 0; }
+    #adotaveis-interna .top a.prev { left: 5%; background-position: 0 0; }
+
+
+    #adotaveis-interna .content { width: 100%; position: relative; padding: 13em 0;  float: left;}
+    #adotaveis-interna .content ul { width: 50%; float: left;}
+    #adotaveis-interna .content ul li { width: 100%; margin: 0 0 2.3em 0; float: left;}
+    #adotaveis-interna .content ul li i {width: 24px; height: 21px; background: url(../img/patas-dadas-adotaveis-elements.png); float: left; margin: 2px 0 0 0; }
+    #adotaveis-interna .content ul p { float: left; font-size: 1.8em; font-weight: 300; margin: 0 0 0 1em }
+    #adotaveis-interna .content ul li p b { text-transform: uppercase; font-size: 90%; font-weight: 900 }
+    #adotaveis-interna .content ul li p.check { position: relative; margin: 0 0 0 2em; }
+    #adotaveis-interna .content ul li p.check span { position:absolute; top: 6px; left: -20px; background: url(../img/patas-dadas-adotaveis-elements.png) -134px -264px; width: 19px; height: 19px; float: left;   }
+
+
+    #adotaveis-interna .content ul li i.porte { background-position: -128px -4px; float: left;}
+    #adotaveis-interna .content ul li i.sexo { background-position: -129px -60px; float: left;}
+    #adotaveis-interna .content ul li i.idade { background-position: -130px -109px; float: left;}
+    #adotaveis-interna .content ul li i.saude { background-position: -129px -167px; float: left;}
+    #adotaveis-interna .content ul li i.temperamento { background-position: -129px -217px; float: left;}
+
+
+    #adotaveis-interna .content .images { width: 100%; margin: 5% 0 0; float: left;}
+    #adotaveis-interna .content .images ul.image-one { width: 48%;  float: left;}
+    #adotaveis-interna .content .images figure { width: 100%; height: 390px; border-radius: 10px; float: left; background-size: cover !important; background-position: center !important; padding: 0; margin: 0 }
+
+    #adotaveis-interna .content .images ul {margin: 0 0 !important }
+    #adotaveis-interna .content .images ul:first-child {margin: 0 4% 0 0 !important }
+    #adotaveis-interna .content .images ul:last-child {margin: 0 0 0 4% !important }
+
+    #adotaveis-interna .content .images ul.image-two { width: 22%; float: left;}
+    #adotaveis-interna .content .images ul.image-tree { width: 22%; float: left;}
+
+    #adotaveis-interna .content .images ul.image-tree figure { height: 230px;}
+    #adotaveis-interna .content .images ul.image-tree li { border-top: 1px dashed #f2f3f9; border-bottom: 1px dashed #f2f3f9; padding: 0 0 2em; }
+    #adotaveis-interna .content .images ul.image-tree li a { width: 100%; float: left; margin: 2em 0 0; color: #372821 }
+    #adotaveis-interna .content .images ul.image-tree li a i { background: none; font-size: 3.8em}
+    #adotaveis-interna .content .images ul.image-tree li a p { line-height: 1.2; font-size: 1.4em; margin: 5px 0 0 1.5em }
+
+    #adotaveis-interna .content .images ul.image-tree li a:hover > p { text-decoration: underline; }
+
+
+
+    #adotaveis-interna .content .icones { width:; margin: 5% 0 0; float: left;}
+    #adotaveis-interna .content .icones div { width: 130px; float: left;}
+    #adotaveis-interna .content .icones div i { width: 78px; height: 78px; float: left; background: url(../img/patas-dadas-adotaveis-elements.png); margin: 0 0 12px 25px}
+    #adotaveis-interna .content .icones div p { float: left; clear: both; font-size: 1.2em; font-weight: 400; text-align: center; width: 100%; line-height: 1.5 }
+    #adotaveis-interna .content .icones div .exp { margin: 0.5em 0 0 0; }
+    #adotaveis-interna .content .icones div .exp a { text-decoration: underline; color: #372821 }
+    #adotaveis-interna .content .icones div .exp a:hover { text-decoration: none;  }
+    #adotaveis-interna .content .icones div.active .exp { color: #FEC901; font-size: 160%; line-height: 1; font-weight: 900;}
+
+    #adotaveis-interna .content .icones div p b { text-transform: uppercase; font-size: 120%; font-weight: 900  }
+
+    #adotaveis-interna .content .icones div i.racao { background-position: -203px -118px; float: left;}
+    #adotaveis-interna .content .icones div.active i.racao { background-position: -203px -18px; float: left;}
+
+    #adotaveis-interna .content .icones div i.antipulgas { background-position: -301px -118px; float: left;}
+    #adotaveis-interna .content .icones div.active i.antipulgas { background-position: -301px -18px; float: left;}
+
+    #adotaveis-interna .content .icones div i.castracao { background-position: -399px -118px; float: left;}
+    #adotaveis-interna .content .icones div.active i.castracao { background-position: -399px -18px; float: left;}
+
+    #adotaveis-interna .content .icones div i.vacinas { background-position: -497px -118px; float: left;}
+    #adotaveis-interna .content .icones div.active i.vacinas { background-position: -497px -18px; float: left;}
+
+
+    #adotaveis-interna .content .right { margin: 5% 0 0; float: right;}
+    #adotaveis-interna .content .right a { float: left; padding: 2em 2.5em; font-size: 1.4em; text-decoration: none; color: #372821; border:1px dashed #372821; border-radius: 50px; text-transform: uppercase; font-weight: 900; transition: all 500ms ease-out;   }
+    #adotaveis-interna .content .right a:hover { background: #372821; color:#FFF;   }
+    #adotaveis-interna .content .right a.adotar { background: #372821; color:#FEC901; padding: 1.75em 2.5em; margin: 0 0 0 2em;    }
+    #adotaveis-interna .content .right a i { float: left; width: 31px; height: 27px; float: left; background: url(../img/patas-dadas-adotaveis-elements.png); background-position: -215px -226px; float: left;  }
+    #adotaveis-interna .content .right a p { float: left; }
+    #adotaveis-interna .content .right a.adotar p { margin: 4px 0 0 1em; }
+ 
+    #adotaveis-interna .content .right a.adotar:hover { background: #FEC901; color:#372821; border:1px dashed #FEC901;  }
+    #adotaveis-interna .content .right a.adotar:hover > i { background-position: -255px -226px !important;   }
+
+
+
+
+
+
+/* ---------------- SETOR  ---------------- */
+    #lojinha { width: 100%; height: auto; position: relative; background:#FFF ; float: left; z-index: 999}
+
+    #lojinha #container { width: 100%; height: 380px; position: relative; background:#23b9ea ; float: left; z-index:;}
+
+    #lojinha #container .lay1 { margin: 50px 0 0 0  }
+
+    #lojinha #listagem {width: 100%; height: auto; position: relative; background:; float: left; z-index: 999}
+    #lojinha #listagem .menuLateral {width:40px; padding: 0 15px; background:#FFF; height: 100%; position: absolute; z-index: 9991; }
+    #lojinha #listagem .menuLateral.left {top: 0; left: 0; border-right: 1px solid #f2f3f9 }
+    #lojinha #listagem .menuLateral.right {top: 0; right: 0; border-left: 1px solid #f2f3f9 }
+    #lojinha #listagem .menuLateral li {width: 100%; float: left; color: #372822; opacity: 1; transition: all 500ms ease-in-out;   }
+    #lojinha #listagem .menuLateral li.active { opacity: 1  }
+    #lojinha #listagem .menuLateral li:hover { opacity: .7  }
+    #lojinha #listagem .menuLateral li a { width: 100%; float: left; color: #372822;  }
+    #lojinha #listagem .menuLateral li i {width: 24px; height: 19px; float: left; background: url(../img/patas-dadas-adotaveis-elements.png); margin: 17px 0 5px 8px; background-position: -1px -1px;    }
+    #lojinha #listagem .menuLateral li p { width: 100%; text-align: center; float: left; color: #23b9ea; margin-top: -22px; font-weight: 900;  }
+    #lojinha #listagem .menuLateral li.excep { opacity: 1; margin: 17px 0 0 0;  }
+    #lojinha #listagem .menuLateral li.excep p { font-size: 0.8em !important  }
+
+    #lojinha #listagem .menuLateral .line {width: 100%; height: 1px; float: left; background: #f2f3f9; margin: 13px 0 0 0; }
+
+    #lojinha #listagem .menuLateral li i.todos { width: 26px; height: 33px; margin: 17px 0 5px 8px; background-position: -219px -280px;  }
+
+
+
+
+    #lojinha #listagem #setor1 { width: 95%; height: auto; padding:0 0 5% 0; position: relative; background:#FFF ; float: left; z-index: 999}
+    
+    #lojinha #listagem #setor1 h2 { font-family: 'Pacifico', cursive; float: left; margin: 5% 0 3% 0; width: 100%; font-size:3em; color: #372821}
+  
+    #lojinha #listagem #setor1 .swiper-slide { height: 400px; position: relative; display: block; overflow: hidden; border-radius: 8px; }
+    #lojinha #listagem #setor1 .swiper-slide:hover { text-decoration: none }
+    #lojinha #listagem #setor1 figure { width: 75%; height: 100%; padding: 0; margin: 0; position: relative; float: left; z-index: 999; background-size: cover !important; background-position: center center !important; transition: all 4000ms ease-in-out;}
+    #lojinha #listagem #setor1 .swiper-slide .right { width: 25%; height: 100%; background:#f4f4f4; position: relative; display: block; overflow: hidden; }
+    #lojinha #listagem #setor1 .swiper-slide .right div { width: 80%; text-align: center; background:; position: relative; margin: 50% 10% }
+    #lojinha #listagem #setor1 .swiper-slide .right div h3 { width: 100%; text-align: center; font-size: 1.8em; color: #372821; font-weight:300;line-height: 1;  }
+    #lojinha #listagem #setor1 .swiper-slide .right div p { width: 100%; text-align: center; font-size: 0.9em; color: #23b9ea; font-weight:900;line-height: 3;  }
+
+
+    #lojinha #listagem #setor1 .swiper-container-horizontal > .swiper-pagination {width: 25%; left: inherit; right: 0}
+
+
+
+
+    #lojinha #listagem #setor1 ul {width:100%; float: left; border-bottom: 1px solid #f2f3f9}
+    #lojinha #listagem #setor1 ul:last-child { border-bottom: 0 }
+    #lojinha #listagem #setor1 ul li {width:21%; height: auto; background: #FFF; margin: 0 2% 4%; float: left; display: block; overflow: hidden; position: relative;  }
+
+    #lojinha #listagem #setor1 ul li .image {width:100%; height: auto; background: #FFF; margin: 0; float: left; border-radius:10px; display: block; overflow: hidden; position: relative;  }
+    #lojinha #listagem #setor1 ul li .image figure { width: 100%; height: 180px; float: left; background-size: cover !important; background-position: center !important;
+      transition: all 1500ms ease-out; margin: 0; padding: 0; position: relative; z-index: 1}
+
+    #lojinha #listagem #setor1 ul li:hover > .image figure { 
+       -webkit-transform: scale(1.15, 1.15);
+       -moz-transform: scale(1.15, 1.15);
+       -ms-transform: scale(1.15, 1.15);
+       -o-transform: scale(1.15, 1.15);
+       transform: scale(1.15, 1.15);
+    }
+    #lojinha #listagem #setor1 ul li .image span {width:100%; height: 100%; background: #372821; float: left; position: absolute; top: 0; left: 0; opacity: 0; z-index: 2; transition: all 1500ms ease-out; }
+    #lojinha #listagem #setor1 ul li:hover > .image span { opacity: .8 }
+
+
+
+    #lojinha #listagem #setor1 ul li .box { width: 100%; height: 180px; background:; float: left; transition: all 500ms ease-out;position: absolute; z-index: 2; opacity: 0;  top: 0; left: 0 }
+
+    #lojinha #listagem #setor1 ul li:hover > .box { opacity: 1 }
+
+
+    #lojinha #listagem #setor1 ul li .box .top { width: 100%; position: absolute; top: 50%; margin-top:-70px;  text-align: center }
+    #lojinha #listagem #setor1 ul li .box .top h3 { width: 100%; text-align: center; font-size: 3em; color: #FFF; font-family: 'Pacifico', cursive; float: left; cursor: default;}
+    #lojinha #listagem #setor1 ul li .box .top i { width: 38px; height: 38px; background: url(../img/patas-dadas-adotaveis-elements.png); position: absolute; top: 0; left: 50%; margin: 51px 0 0 -18px; background-position: -113px -386px; transition: all 200ms ease-out; }
+     #lojinha #listagem #setor1 ul li:hover .box .top i {
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    #lojinha #listagem #setor1 ul li:hover > .bottom { opacity: 1 }
+    #lojinha #listagem #setor1 ul li .bottom { opacity: 0; width: 100%; position: absolute; left: 50%; top: 150px;
+    z-index: 3; margin-left: -74px }
+    #lojinha #listagem #setor1 ul li .bottom p { font-size: 1.2em; color: #FFF; float: left; cursor: default; }
+    #lojinha #listagem #setor1 ul li .bottom i { background: url(../img/patas-dadas-adotaveis-elements.png); float: left; margin: 0 0 0 1em; transition: all 200ms ease-out; opacity: .6 }
+    #lojinha #listagem #setor1 ul li .bottom a { float: left; }
+
+    #lojinha #listagem #setor1 ul li .bottom i.facebook { width: 6px; height: 14px; background-position: -8px -583px; }
+    #lojinha #listagem #setor1 ul li .bottom i.twitter { width: 16px; height: 16px; background-position: -34px -584px; }
+    #lojinha #listagem #setor1 ul li .bottom i.gplus { width: 15px; height: 16px; background-position: -67px -583px; }
+
+    #lojinha #listagem #setor1 ul li .bottom i:hover { opacity: 1 }
+
+
+    #lojinha #listagem #setor1 ul li .box2 { width: 80%; text-align: center; background:; position: relative; margin: 3% 10%; color: #372821;}
+    #lojinha #listagem #setor1 ul li .box2:hover { text-decoration: none }
+    #lojinha #listagem #setor1 ul li .box2:hover > h3 { text-decoration: underline; }
+    #lojinha #listagem #setor1 ul li .box2 h3 { width: 100%; text-align: center; font-size: 1.6em; color: #372821; font-weight:300;line-height: 1;  }
+    #lojinha #listagem #setor1 ul li .box2 p { width: 100%; text-align: center; font-size: 1.4em; color: #23b9ea; font-weight:900;line-height: 3;  }
+
+
+
+
+
+
+
+/* ---------------- SETOR ---------------- */
+    #suasacola { width: 100%; height: auto; padding: 0 0 4% 0; position: relative; background: ; float: left; }
+  
+    #suasacola { width: 100%; float: left; }
+    #suasacola .top { width: 100%; float: left; margin: 1em 0 }
+    #suasacola .top h2 { font-family: 'Pacifico', cursive; float: left; margin: 0 0 0 0; width: 100%; font-size:3em; color: #372821 }
+
+
+    #suasacola .top a { cursor: pointer; margin: 1% 2em 0 0; float: right; color: #000; font-size: 0.9em; text-transform: uppercase; }
+    #suasacola .top a figure { background: url(../img/patasdadas-elements-sacola.png); width: 24px; height: 30px; float: left; margin: 0 0.3em; }
+    #suasacola .top a .quest { background-position: -374px -1px; }
+    #suasacola .top a p { text-decoration: underline; float: left; width: auto; margin: 0.3em 0 0 0; font-size: 1.2em; font-weight: 900 }
+    #suasacola .top p:hover { text-decoration: none }
+
+
+
+
+    #suasacola .box { float: left; width: 100%; margin: 0 0 5% 0  }
+    #suasacola .box .pruds { float: left; width: 99%; margin: 0 0 1% 0; color: #bfbebe; text-align: right; }
+    #suasacola .box .topo { float: left; border: 1px solid #eeeeed; width: 99%; height:; padding: 1.2em 0; background:; font-size: 0.9em; font-weight: 700; text-transform: uppercase;  }
+    #suasacola .box .topo p { float: left; font-size: 1.4em; color: #000 }
+
+    #suasacola .box .one { width: 10%; text-indent: -10000px; float: left; background:; }
+    #suasacola .box .two { width: 32.5%; float: left; background:; }
+    #suasacola .box .tre { width: 25%; float: left; background:; }
+    #suasacola .box .four { width: 32.5%; float: left; background:; }
+
+
+    #suasacola .box .produto-sacola { padding: 3em 0; float: left; border-bottom: 1px solid #eeeeed; width: 99%; height:; background:; }
+    #suasacola .box .produto-sacola .one img { float: left; width: 70%  }
+    #suasacola .box .produto-sacola .two { padding: 1.5em 0 0; font-size: 1.3em; font-weight: 700; text-transform: uppercase;  }
+    #suasacola .box .produto-sacola .two p { float: left; width: 95%  }
+    #suasacola .box .produto-sacola .tre p { margin: 2.45em 0 0 0; font-size: 1.2em; }
+    #suasacola .box .produto-sacola .four select { width: 85%; padding: 0 0 0 5%; margin: 1.3em 0 0 0; height: 40px; background: #fbfbfb; border: 1px solid #eeeeed; font-size: 1.3em; font-weight: 700; float: left; }
+    #suasacola .box .produto-sacola .four .trash { width: 18px; height: 21px; background: url(../img/contornos-elements.png) -411px 0; float: right; margin: 26px 0 0 0; opacity: .3 }
+    #suasacola .box .produto-sacola .four .trash:hover { opacity: 1 }
+
+
+    #suasacola .box .bottom { margin-bottom: 4em; float: left; border: 1px solid #eeeeed; width: 99%; height:; padding: 3em 0; background:; font-size: 0.9em; font-weight: 700; text-transform: uppercase; border-top:0; }
+    #suasacola .box .bottom p { float: left; font-size: 1.4em; color: #000 }
+
+    #suasacola .box .bottom .tre { text-indent: -10000px; }
+    #suasacola .box .bottom .two p { margin: 3px 0 0 0  }
+    #suasacola .box .bottom .four p { margin: -5.5px 0 0 0; width: 85%; text-align:;  }
+    #suasacola .box .bottom .four b { font-size: 1.7em }
+
+
+    #suasacola .box .metodos { float: left; width: 100%; margin: 2% 0 }
+    #suasacola .box .metodos li { float: left; width: 25% }
+    #suasacola .box .metodos li:last-child { float: left; width: 50%; }
+    #suasacola .box .metodos li:last-child b { font-size: 1.3em }
+
+    #suasacola .box .metodos li select { width: 85%; padding: 0 0 0 5%; margin: 4.2em 0 0 0; height: 40px; background: #fbfbfb; border: 1px solid #eeeeed; font-size: 1.1em; font-weight: 700; float: left; }
+    #suasacola .box .metodos li textarea { width: 95%; padding: 2% 0 0 4%; margin: 1.3em 0 0 0; height: 80px; background: #fbfbfb; border: 1px solid #eeeeed; font-size: 1.1em; font-weight: 700; float: left; }
+
+
+    #suasacola .box .final a { cursor: pointer; margin: 1% 2em 0 0; float: left; color: #000; font-size: 0.9em; text-transform: uppercase; }
+    #suasacola .box .final a figure { background: url(../img/contornos-elements.png); width: 24px; height: 30px; float: left; margin: 0 1em; }
+    #suasacola .box .final a .print { background-position: -449px 0; }
+    #suasacola .box .final a .sacis { background-position: -330px 0; width: 18px; }
+    #suasacola .box .final a .quest { background-position: -374px -1px; width: 17px; }
+    #suasacola .box .final a p { text-decoration: underline; float: left; width: auto; margin: 0.3em 0 0 0; font-size: 1.2em; font-weight: 900 }
+    #suasacola .box .final p:hover { text-decoration: none }
+
+
+    #suasacola .box .final .encomendar { float: left; padding: 1.1em 2.5em; text-align: center; font-weight: 900; font-size: 1.3em; text-transform: uppercase; background: #372821; color: #39c0ec; margin: 0; float: right; border-radius: 50px; transition: all 500ms ease-out; }
+    #suasacola .box .final .encomendar:hover { background: #39c0ec; color: #372821; text-decoration: none }
+
+    #suasacola .box .final div { width: 50%; float: left;  }
+
+
+
+
+/* ---------------- MODAL AJUDA ---------------- */
+    .ajuda { width: 100%; height: 100%; position: fixed; overflow: auto; padding-bottom: 7.5%; top: 0; left: 0; background: rgba(0, 0, 0, 0.62); z-index: 1001001}
+    .ajuda .black { width: 100%; height: 100%; cursor:pointer; ; position: absolute; z-index: 1 }
+
+
+    .ajuda .center { position: relative; float: left; background: #FFF; top:; margin:5% 0 10% 20%; padding: 5%; width: 50%; z-index: 2;
+
+    }
+     .adotavel .center {
+    background: url(../img/home/patasdadas-slider1-01.jpg) no-repeat #FEC901 !important;
+    background-position: 64% top !important;
+    background-size: 50% !important;
+    padding: 21% 5% 5% !important;
+    }
+    .amare .center {
+    background: #FEC901 !important;
+
+    }
+    
+
+    .ajuda p {font-size: 1.2em; line-height: 1.8; color: #000; float: left; width: 100%; text-align: center; }
+    .ajuda p span {font-size: 1.8em; color: #000; float: left; width: 100%; text-align: center; }
+
+    .ajuda input {font-size: 1.2em; line-height: 1.8; color: #000; float: left; width: 100%; text-align: center; }
+
+    .ajuda .field {font-size: 1.2em; line-height: 1.8; color: #000; float: left; width: 80%; height: 40px; margin: 0 0 5% 10%; text-align: center; }
+
+
+    .ajuda .adotar { float: left; font-size: 1.2em; text-decoration: none; color: #FEC901; border-radius: 50px; text-transform: uppercase; font-weight: 900; transition: all 500ms ease-out; background: #372821; padding: 1.0em 1.5em; margin: 0 0 0 2em;   }
+    .ajuda .adotar:hover { background: #372821; color:#FFF;   }
+    .ajuda .adotar {     }
+
+
+
+    .ajuda a { font-weight: 700; text-decoration: underline; color: #000  }
+    .ajuda a:hover { text-decoration: none;  }
+
+
+    .ajuda .center .left { width: 49.5%; margin: 7.5% 0; background:; float: left; border-right: 1px solid #eeeeed; }
+    .ajuda .center .left figure { width: 100%; margin: 0; float: left; text-align: center;  margin: 0 0 1em 0  }
+    .ajuda .center .right { width: 50%; margin: 7.5% 0; background:; float: left; }
+    .ajuda .center .right figure { width: 100%; margin: 0; float: left; text-align: center; margin: 0 0 1em 0  }
+    .ajuda .center .left p, .ajuda .center .right p { line-height:1.5; margin: 5% 0 0 0  }
+    .ajuda .center .left img, .ajuda .center .right img { opacity: .1  }
+
+
+    .adotarer .center .left { border-right: 0 !important; }
+    .adotarer .adotar { font-size: 2.1em !important;  margin: 14px 0 0 2em !important;   }
+
+
+
+    .fechar_right { width: 9px !important; height: 11px; margin: 0 !important; position: absolute; top: 0; right: 0; background:  url(../img/patasdadas-elements-sacola.png) -484px 10px; padding: 1em; cursor: pointer; }
+    .fechar_right:hover { background-color: #E6B600;  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------- SETOR ---------------- */
+    .excep-loja header#desktop .left h1 img { width: 63px; }
+ 
+    .lojinha-interna #container2 { width: 100%; height: 100px; position: relative; background:#23b9ea ; float: left; z-index:; }
+
+
+    #bread { width: 100%; margin: 3em 0; height: auto; position: relative; float: left; font-size: 1.2em; font-weight: 400 }
+    #bread a { float: left; color: #39c0ec;   }
+    #bread a:hover { text-decoration: underline;   }
+    #bread p { float: left; color: #372821; margin: 0 1em  }
+    #bread p.atual {  margin: 0  }
+
+
+    .lojinha-interna #setor1 .produto { width: 100%; margin: 0; padding: 0 0 5% 0; height: auto; position: relative; float: left;  border-bottom:1px solid #f2f3f9;}
+
+
+    .lojinha-interna #setor1 .produto .left { width: 47.5%; float: left; margin: 2% 0; position: relative; z-index: 99 }
+
+      .lojinha-interna #setor1 .produto .left .zoomWrapper { position: relative; }
+    .lojinha-interna #setor1 .produto .left img { width: 100%; height: 100% !important; float: left; background: white; z-index: 99 !important }
+
+    .lojinha-interna #setor1 .produto .left #gal1 { width: 100% !important; float: left !important;  }
+    .lojinha-interna #setor1 .produto .left a img { width: 70px !important;  border:10px solid white; }
+    .lojinha-interna #setor1 .produto .left .active img { border:10px solid #23b9ea !important; } 
+
+
+    .lojinha-interna #setor1 .produto .right { width: 45%; float: right; margin: 2% 0; }
+    .lojinha-interna #setor1 .produto .right h3 { width: 100%; float: left; margin: 0 0 2% 0; font-size: 3.6em; text-transform:; font-weight: 300; color: #372821 }
+    .lojinha-interna #setor1 .produto .right p { width: 100%; float: left; margin: 0 0 6% 0; font-size: 1.5em; color: #372821 }
+
+    .lojinha-interna #setor1 .produto .right p b { font-size: 1.8em; }
+
+    .lojinha-interna #setor1 .produto .right p.price { color: #23b9ea }
+
+
+    .lojinha-interna #setor1 .produto .right form { width: 100%; float: left; }
+    .lojinha-interna #setor1 .produto .right form ul { width: 100%; float: left; }
+    .lojinha-interna #setor1 .produto .right form li { width: 47.5% !important; margin: 0 5% 0 0 !important; float: left; }
+    .lojinha-interna #setor1 .produto .right form li:last-child { margin: 0 0 0 0 !important; }
+
+    .lojinha-interna #setor1 .produto .right form li label { float: left; font-size: 1.4em; font-weight: 900; margin: 5px 1em 1.5em 0; }
+    .lojinha-interna #setor1 .produto .right form li select { float: left; height: 30px; font-size: 1.2em; }
+
+    .lojinha-interna #setor1 .produto .right form li .btn { float: left; }
+
+    
+    .lojinha-interna #setor1 .produto .right form li a { float: left; width: 100%; text-align: center; padding: 2em 0 2em; font-size: 1.4em; text-decoration: none; color: #39c0ec; background: #372821; border-radius: 50px; text-transform: uppercase; font-weight: 900; transition: all 500ms ease-out;   }
+    .lojinha-interna #setor1 .produto .right form li a p { color: #39c0ec; margin: 0  }
+    .lojinha-interna #setor1 .produto .right form li a:hover { background: #39c0ec; color:#372821;   }
+    .lojinha-interna #setor1 .produto .right form li a:hover > p {  color:#372821;   }
+
+
+
+    .lojinha-interna #setor1 .produto .right .bottom { width: 100%; float: left;  }
+    .lojinha-interna #setor1 .produto .right .bottom p { width: auto; font-size: 1.2em; color: ; float: left; cursor: default; }
+    .lojinha-interna #setor1 .produto .right .bottom i { background: url(../img/patas-dadas-adotaveis-elements.png); float: left; margin: 0 0 0 1em; transition: all 200ms ease-out; opacity: .6 }
+    .lojinha-interna #setor1 .produto .right .bottom a { float: left; }
+
+    .lojinha-interna #setor1 .produto .right .bottom i.facebook { width: 6px; height: 14px; background-position: -8px -583px; }
+    .lojinha-interna #setor1 .produto .right .bottom i.twitter { width: 16px; height: 16px; background-position: -34px -584px; }
+    .lojinha-interna #setor1 .produto .right .bottom i.gplus { width: 15px; height: 16px; background-position: -67px -583px; }
+
+    .lojinha-interna #setor1 .produto .right .bottom i:hover { opacity: 1 }
+
+
+    .lojinha-interna #setor1 .produto .right form li#Valida, .lojinha-interna #setor1 .produto .right form li#ValidaQuantidade { 
+	    font-size: 1.5em; width: 90% !important;       
+	    background: #FDEEEE !important;
+		border: 1px solid #FFDDDD;
+		margin: 0 0 1.5em 0 !important;
+		padding: 16px;
+	}
+
+
+/* ---------------- SETOR  ---------------- */
+    #eventos { width: 100%; height: auto; position: relative; background:#FFF ; float: left; z-index: 999}
+
+    #eventos #container { width: 100%; height: 380px; position: relative; background:#00ACAC; float: left; z-index:;}
+    #eventos #container .lay1 { margin: 50px 0 0 0  }
+
+
+
+    #eventos #content { width: 100%; padding: 5% 0 0 0;  height: auto; position: relative; float: left; z-index:;}
+    #eventos #content ul { width: 75%; background:; margin: 0 0 5% 7.5%; padding: 0 0 5% 0; height: auto; position: relative; float: left; z-index:; border-bottom: 1px dashed #f2f3f9 ;}
+
+    #eventos #content ul .left { width: 21%; padding: 0 0 0 0; height: auto; background:; float: left; margin: 0 4% 0 0}
+    #eventos #content ul .left i { background: url(../img/patas-dadas-adotaveis-elements.png); float: left;  transition: all 200ms ease-out; position: relative; }
+    #eventos #content ul .left i .one { position: absolute; top: 9px; width: 100%; text-align: center; left: -0px; font-size: 1.2em; color: #FFF; text-transform: uppercase; font-style: normal; }
+    #eventos #content ul .left i .two { position: absolute; top: 0; line-height: 1.65; width: 100%; text-align: center; left: 0; font-size: 6em; color: #372821; font-family: 'Pacifico', cursive; font-style: normal; }
+
+    #eventos #content ul .left i.calender { width: 85px; height: 91px; background-position: -327px -223px; margin: 0 0 1.5em 0 ; }
+    #eventos #content ul .left i.local { width: 10px; height: 13px; background-position: -225px -358px; }
+    #eventos #content ul .left i.hora { width: 15px; height: 15px; background-position: -223px -393px; }
+
+    #eventos #content ul .left h2 { width: 100%; float: left; margin:0 0 1em 0; font-size: 1.8em; color: #00acac; font-weight: 700 }
+    #eventos #content ul .left div { width: 100%; float: left; margin:0 0 2em 0; position: relative; }
+    #eventos #content ul .left div i { position: absolute; top: 2px; left: 0; }
+    #eventos #content ul .left div p { float: left; width: 90%; float: right; font-size: 1.4em; color: #372821; font-weight: 400  }
+
+
+    #eventos #content ul .right { width: 75%; height: auto; background:; float: left; }
+
+    #eventos #content ul .right figure { width: 100%; height: 380px; border-radius: 10px; float: left; background-size: cover !important; background-position: center !important; transition: all 1500ms ease-out; margin: 0; padding: 0; position: relative; z-index: 1 }
+
+    #eventos #content ul .right div { width:; float: left; margin: 1.75em 0 0 }
+    #eventos #content ul .right div i { font-size: 1.5em; float: left; color: #00acac; margin: 2px 10px 0 0; }
+    #eventos #content ul .right div p { font-size: 1.4em; color: #372821; float: left; }
+    #eventos #content ul .right div p a { color: #00acac; }
+    #eventos #content ul .right div p a:hover { text-decoration: underline; }
+
+
+
+
+
+
+
+
+
+
+/* ---------------- SETOR  ---------------- */
+    #ajudar { width: 100%; height: auto; position: relative; background:#FFF ; float: left; z-index: 999}
+
+    #ajudar #container { width: 100%; height: 380px; position: relative; background:#CD7CBB; float: left; z-index:;}
+    #ajudar #container .lay1 { margin: 50px 0 0 0  }
+
+
+
+    #ajudar .content { width: 100%; padding: 5% 0 0 0;  height: auto; position: relative; float: left; z-index:;}
+    #ajudar .content ul { width: 100%; background:; margin: 0 0 5% 0; padding: 0 0 5% 0; height: auto; position: relative; float: left; z-index:; border-bottom: 1px dashed #f2f3f9 ;}
+    #ajudar .content ul li { width: 47.5%; background:; margin: 0 2.5% 0 0; position: relative; display: block; float: left;}
+    #ajudar .content ul li:last-child { background:; margin: 0 0 0 2.5%; font-size: 1.7em; font-weight: 300 }
+
+    #ajudar .content ul li h2 { float: left; font-size: 4.8em; font-weight: 800; width: 80%; margin: 0 10%;  text-align: center; }
+    #ajudar .content ul li i { width: 152px; height: 113px; float: left; background: url(../img/patasdadas-elements-ajudar.png);
+       position: relative; clear: both; left: 50%; margin: 2em 0 0 -76px; }
+
+    #ajudar .content ul li i.racao {  }
+    #ajudar .content ul li i.vacinas {  background-position: 0 -209px;  }
+    #ajudar .content ul li i.castracao {  background-position: 0 -432px;  }
+    #ajudar .content ul li i.antipulgas {  background-position: 0 -655px;  }
+
+    #ajudar .content ul li p { float: left; margin: 1em 0 0 0; clear:both; }
+    #ajudar .content ul li p b { text-transform: uppercase; }
+    #ajudar .content ul li p small { font-size: 0.7em }
+
+    #ajudar .content ul li a.btn { float: left; clear: both; text-align: center; padding: 1.75em 2.25em; margin: 1em 0 0 0; font-size: 1em; text-decoration: none; color: #cd7cbb; background: #372821; border-radius: 50px; text-transform: uppercase; font-weight: 900; transition: all 500ms ease-out;   }
+    #ajudar .content ul li a.btn b { color: #FFF;  }
+    #ajudar .content ul li a.btn:hover { background: #cd7cbb; color:#372821;   }
+
+    #ajudar .content ul li p a { color: #FFF; text-decoration: underline; color: #cd7cbb }
+    #ajudar .content ul li p a:hover { text-decoration: none;}
+
+    #ajudar .content ul li span { background: url(../img/patas-dadas-adotaveis-elements.png); float: left;  transition: all 200ms ease-out; position: relative; margin: 1px 7px 0 0; width: 10px; height: 13px; background-position: -225px -358px; }
+
+
+    #ajudar .content ul li figure { float: left; width: 100%; height: 300px; border-radius: 10px; margin: 2em 0 3em; background-size: cover !important; background-position: center !important  }
+
+    #ajudar .content ul li.agenda a { font-size: 1.3em; position: absolute; bottom: 0; left: 50%; margin-left: -61px  }
+
+    #ajudar .content ul li div { float: left; font-size: 0.7em; margin: 0 0 1.5em 0}
+
+
+
+
+
+    #ajudar #rosa { width: 100%; padding: 5% 0 0 0; background: #cd7cbb; margin: 0 0 5% 0  height: auto; position: relative; float: left; z-index:;}
+    #ajudar #rosa ul { width: 100%; background:; margin: 0 0 5% 0; padding: 0 0 5% 0; height: auto; position: relative; float: left; z-index:; }
+    #ajudar #rosa ul li { width: 31.66%; background:; margin: 0 2.5% 0 0; display: block; float: left;}
+    #ajudar #rosa ul li:last-child { margin: 0 }
+
+    #ajudar #rosa ul li h3 {font-size: 3em; color: #372821; font-family: 'Pacifico', cursive; clear: both; float: left;}
+    #ajudar #rosa ul li p { margin: 5% 0; font-size: 1.7em; font-weight: 300; color: #FFF; clear: both; float: left;}
+    #ajudar #rosa ul li p a { color: #FFF; text-decoration: underline;}
+    #ajudar #rosa ul li p a:hover { text-decoration: none;}
+
+
+
+
+
+
+
+
+
+/* ---------------- SETOR  ---------------- */
+    #quemsomos { width: 100%; height: auto; position: relative; background:#FFF ; float: left; z-index: 999}
+
+    #quemsomos #container { width: 100%; height: 380px; position: relative; background:#f77565; float: left; z-index:;}
+    #quemsomos #container .lay1 { margin: 50px 0 0 0  }
+
+
+
+    #quemsomos .content { width: 100%; padding: 5% 0 0 0; color: #372821; height: auto; position: relative; float: left; z-index:;}
+    #quemsomos .content .left { width: 76.5%; height: auto; background:; margin: 0 3.5% 0 0; position: relative; float: left; }
+
+    #quemsomos .content .padd { width: 90%; padding: 0 5%; height: auto; background:; margin: 0 5% 0 0; position: relative; float: left; }
+    #quemsomos .content .padd figure { width: 100%; float: left; height: 350px; margin: 0; padding: 0; background-size: cover !important; background-position: center !important; border-radius: 10px; }
+
+    #quemsomos .content ul.names { width: 100%; height: auto; background:; padding: 0 0 5% 0; margin: 5% 5% 0 0; position: relative; float: left; border-bottom: 1px solid #f2f3f9; }
+    #quemsomos .content ul.names li { width: 15%; height: auto; background:; margin: 0 5% 0.75em ; position: relative; float: left; font-size: 1.2em }   
+
+    #quemsomos .content h3 { width: 100%; height: auto; background:; margin: 5% 0; position: relative; float: left; font-size: 3em; font-family: 'Pacifico', cursive; text-align: center }   
+    #quemsomos .content ul.midias { width: 100%; height: auto; background:; padding: 0 0 5% 0; margin: 5% 5% 0 0; position: relative; float: left; border-bottom: 1px solid #f2f3f9; }
+   
+
+
+     #quemsomos .content ul.midias li {width:28.3%; margin: 0 2.5% 4%; height: 260px; background: #FFF;  float: left; display: block; overflow: hidden; position: relative; border-radius:  ; display: block; overflow: hidden;  }
+
+     #quemsomos .content ul.midias li .image {width:100%; height: auto; background: #FFF; margin: 0; float: left; border-radius:10px; display: block; overflow: hidden; position: relative;    }
+     #quemsomos .content ul.midias li .image figure { width: 100%; height: 180px; float: left; background-size: cover !important; background-position: center !important;
+      transition: all 1500ms ease-out; margin: 0; padding: 0; position: relative; z-index: 1}
+
+     #quemsomos .content ul.midias li:hover > .image figure { 
+       -webkit-transform: scale(1.15, 1.15);
+       -moz-transform: scale(1.15, 1.15);
+       -ms-transform: scale(1.15, 1.15);
+       -o-transform: scale(1.15, 1.15);
+       transform: scale(1.15, 1.15);
+      
+    }
+    #quemsomos .content ul.midias li .image span {width:100%; height: 100%; background: #372821; float: left; position: absolute; top: 0; left: 0; opacity: 0; z-index: 2; transition: all 1500ms ease-out; }
+    #quemsomos .content ul.midias li:hover > .image span { opacity: .8 }
+
+
+
+
+     #quemsomos .content ul.midias li .box { width: 100%; height: 180px; background:; float: left; transition: all 500ms ease-out;position: absolute; z-index: 2; opacity: 0; top: 0; left: 0 }
+
+     #quemsomos .content ul.midias li:hover > .box { opacity: 1 }
+
+
+     #quemsomos .content ul.midias li .box .top { width: 100%; position: absolute; top: 50%; margin-top:-70px;  text-align: center }
+     #quemsomos .content ul.midias li .box .top h3 { width: 100%; text-align: center; font-size: 3em; color: #FFF; font-family: 'Pacifico', cursive; float: left; cursor: default;}
+     #quemsomos .content ul.midias li .box .top i { width: 40px; height: 40px; background: url(../img/patas-dadas-adotaveis-elements.png); position: absolute; top: 0; left: 50%; margin: 51px 0 0 -18px; background-position: -114px -445px; transition: all 200ms ease-out; }
+     #quemsomos .content ul.midias li.imagem .box .top i { width: 38px; height: 38px; background: url(../img/patas-dadas-adotaveis-elements.png); position: absolute; top: 0; left: 50%; margin: 51px 0 0 -18px; background-position: -163px -386px; transition: all 200ms ease-out; }
+
+      #quemsomos .content ul.midias li:hover .box .top i { opacity: .7;
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+     #quemsomos .content ul.midias li:hover > .bottom { opacity: 1 }
+     #quemsomos .content ul.midias li .box .bottom { opacity: 0; width: 100%; position: absolute; left: 50%; z-index: 3; top: 150px; left: 50%; margin-left: -74px }
+     #quemsomos .content ul.midias li .box .bottom p { font-size: 1.2em; color: #FFF; float: left; cursor: default; }
+     #quemsomos .content ul.midias li .box .bottom i { background: url(../img/patas-dadas-adotaveis-elements.png); float: left; margin: 0 0 0 1em; transition: all 200ms ease-out; opacity: .6 }
+     #quemsomos .content ul.midias li .box .bottom a { float: left; }
+
+     #quemsomos .content ul.midias li .box .bottom i.facebook { width: 6px; height: 14px; background-position: -118px -583px; }
+     #quemsomos .content ul.midias li .box .bottom i.twitter { width: 16px; height: 16px; background-position: -144px -584px; }
+     #quemsomos .content ul.midias li .box .bottom i.gplus { width: 15px; height: 16px; background-position: -177px -583px; }
+
+     #quemsomos .content ul.midias li .box .bottom i:hover { opacity: 1 }
+
+
+     #quemsomos .content ul.midias li .box2 { width: 80%; text-align: center; background:; position: relative; margin: 3% 10%; color: #372821;}
+     #quemsomos .content ul.midias li .box2:hover { text-decoration: none }
+     #quemsomos .content ul.midias li .box2:hover > h3 { text-decoration: underline; }
+     #quemsomos .content ul.midias li .box2 h4 { width: 100%; text-align: center; font-size: 1.4em; color: #f77565; font-weight:300;  }
+     #quemsomos .content ul.midias li .box2 p { width: 100%; text-align: center; font-size: 1.2em; color: #372821; font-weight:300;   }
+
+
+
+    #quemsomos .content ul.parceiros { width: 100%; height: auto; background:; padding: 0 0 5% 0; margin: 5% 5% 0 0; position: relative; float: left; border-bottom: 1px solid #f2f3f9; }
+   
+
+
+     #quemsomos .content ul.parceiros li {width:20%; margin: 0 2.5% 4%; height: auto; background: #FFF;  float: left; display: block; overflow: hidden; position: relative; border-radius: 10px; display: block; overflow: hidden;  }
+
+     #quemsomos .content ul.parceiros li .image {width:100%; height: 120px; background:; margin: 0; float: left; border-radius:10px; display: block; overflow: hidden; position: relative; text-align: center   }
+     #quemsomos .content ul.parceiros li .image img { height: 80% !important; margin: 7% 0 0; 
+      transition: all 1500ms ease-out;  padding: 0; position: relative; z-index: 1}
+
+
+
+
+
+
+    #quemsomos .content ul.right { width: 20%; padding: 0 0 5% 0; height: auto; background:; position: relative; float: left; }
+
+    #quemsomos .content ul.right li { width: 100%; height: auto; background:; padding: 0 0 5% 0; margin: 5% 5% 0 0; position: relative; float: left; border-bottom: 1px solid #f2f3f9; }
+
+    #quemsomos .content ul.right li h3 { width: 100%; height: auto; background:; margin: 5% 0; position: relative; float: left; font-size: 3em; font-family: 'Pacifico', cursive; text-align: center }   
+    #quemsomos .content ul.right li p { width: 100%; height: auto; background:; margin: 0 0 5%; position: relative; float: left; font-size: 1.5em; font-weight: 300; text-align: center }   
+    #quemsomos .content ul.right li a p { color: #f77565; text-decoration: underline; }   
+    #quemsomos .content ul.right li a p:hover { text-decoration: none; }   
+   
+    #quemsomos .content ul.right li i { width: 122px; height: 102px; float: left; background: url(../img/patasdadas-elements-time-contato.png); position: relative; clear: both; left: 50%; margin: 2em 0 0 -61px; }
+
+    #quemsomos .content ul.right li i.missao {  }
+    #quemsomos .content ul.right li i.historia {  background-position: 0 -203px;  }
+    #quemsomos .content ul.right li i.contas {  background-position: 0 -388px;  }
+
+
+
+
+
+/* ---------------- SETOR  ---------------- */
+    #faleconosco { width: 100%; height: auto; position: relative; background:#FFF ; float: left; z-index: 999}
+
+    #faleconosco #container { width: 100%; height: 380px; position: relative; background:#f79965; float: left; z-index:;}
+    #faleconosco #container .lay1 { margin: 50px 0 0 0  }
+
+
+    #faleconosco .content { width: 100%; padding: 5% 0 0 0; color: #372821; height: auto; position: relative; float: left; z-index:;}
+    #faleconosco .content .left { width: 76.5%; height: auto; background:; margin: 0 3.5% 0 0; padding-bottom: 10%; position: relative; float: left; }
+
+    #faleconosco .content .left h2 { width: 100%; height: auto; background:; margin: 5% 0; position: relative; float: left; font-size: 4.8em; font-weight: 900; text-align: center }   
+    #faleconosco .content .left ul.box { width: 100%; height: auto; background:; padding: 5% 0 5% 0; margin: -1px 0 0 0; position: relative; float: left; border-top: 1px solid #f2f3f9; border-bottom: 1px solid #f2f3f9; background: url(../img/patasdadas-elements-fale-mais.png) 95% center no-repeat; cursor: pointer; }
+    #faleconosco .content .left ul.box:hover { background: url(../img/patasdadas-elements-fale-mais.png) 95% center no-repeat #f2f3f9; }
+    #faleconosco .content .left ul.box li.questao { width: 85%; padding: 0 0 0 5%; height: auto; background:; margin: 0; position: relative; float: left; font-size: 1.8em; font-weight: 400 } 
+    #faleconosco .content .left ul.box li.resposta { width: 80%; padding: 0 0 0 5%; height: auto; background:; margin: 2.5% 0 0; position: relative; float: left; font-size: 1.3em; font-weight: 300; display: block; overflow: hidden; } 
+    #faleconosco .content .left ul.off li.resposta { height: 0 !important; margin: 0 !important; } 
+    #faleconosco .content .left ul.on li.resposta { height: auto !important } 
+    #faleconosco .content .left ul.on { background: url(../img/patasdadas-elements-fale-menos.png) 95% center no-repeat #f2f3f9 !important } 
+    #faleconosco .content .left ul.on:hover { background: url(../img/patasdadas-elements-fale-menos.png) 95% center no-repeat #f2f3f9 !important } 
+
+
+
+
+    #faleconosco .content ul.right { width: 20%; padding: 0 0 5% 0; height: auto; background:; position: relative; float: left; }
+
+    #faleconosco .content ul.right li { width: 100%; height: auto; background:; padding: 0 0 5% 0; margin: 5% 5% 0 0; position: relative; float: left; border-bottom: 1px solid #f2f3f9; }
+
+    #faleconosco .content ul.right li h3 { width: 100%; height: auto; background:; margin: 5% 0; position: relative; float: left; font-size: 3em; font-family: 'Pacifico', cursive; text-align: center }   
+    #faleconosco .content ul.right li p { width: 100%; height: auto; background:; margin: 0 0 5%; position: relative; float: left; font-size: 1.5em; font-weight: 300; text-align: center }   
+    #faleconosco .content ul.right li a p { color: #372821; text-decoration: underline; }   
+    #faleconosco .content ul.right li a p:hover { text-decoration: none; }   
+   
+    #faleconosco .content ul.right li i { width: 122px; height: 102px; float: left; background: url(../img/patasdadas-elements-time-contato.png); position: relative; clear: both; left: 50%; margin: 2em 0 0 -61px; }
+
+    #faleconosco .content ul.right li i.mail { background-position: 0 -557px; }
+    #faleconosco .content ul.right li i.facebook {  background-position: 0 -740px;  }
+    #faleconosco .content ul.right li i.twitter {  background-position: 0 -930px;  }
+    #faleconosco .content ul.right li i.instagram {  background-position: -1px -1105px;  }
+
+
+
+
+
+
+
+/* ---------------- SETOR  ---------------- */
+    #ops { width: 100%; height: auto; position: relative; background: #fec901 ; float: left; z-index: 999}
+
+
+    #ops header#desktop .left { width: 100% !important; text-align: center !important; }
+    #ops header#desktop .left h1 { float: none !important }
+    #ops header#desktop .left h1 img { float: none !important }
+    #ops header#desktop .left h1 p { float: none !important }
+
+
+    #ops .content { width: 100%; margin-top: 17em; float: left; }
+    #ops .content figure { width: 100%; float: left; margin: 0; text-align: center; }
+    #ops .content figure img {  }
+
+    #ops .content .left { margin: 7% 0; padding: 1em 0 3em; width: 100%; float: left; border-bottom: 1px dashed #eab904; border-top: 1px dashed #eab904    }
+    #ops .content .left h2 { width: 100%; float: left; text-align: center; font-size: 4.8em; font-family: 'Pacifico', cursive; color: #372821    }
+    #ops .content .left p { width: 100%; float: left; text-align: center; font-size: 1.6em; color: #372821    }
+
+
+
+
+
+
+
+/* ---------------- FOOTER ---------------- */
+
+
+    footer { width: 100%; height: auto; position: relative; background:#372821 ; float: left; z-index: 999 }
+    footer figure { width: 100%; float: left; padding: 5em 0; text-align: center; margin: 0  }
+    footer img { width: 73px;   }
+
+
+    footer .right { width: 100%; border-top: 1px dashed #4b381e; float: left; padding: 3em 0 1em; }
+    footer .right a { float: left; margin: 0 2em 0 0; font-size: 1.2em; color: #FFF; text-transform:;   }
+    footer .right a.active { color: #FFF;  }
+
+
+
+    footer .right a.facebook { float: left; border: 1px solid transparent; border-radius: 50%;    }
+    footer .right a.facebook:hover { background: #372821; color: #FFF}
+    footer .right a.facebook i { color: #fec901; float: left; font-size: 1.3em; padding: 7px 0; width: 100%; text-align: center; width: 27px; height: 27px;  margin: -6px 0.5em 0 0;   }
+
+    footer .right a.experimental { float: left; background: #6cb702; color: #FFF; border-radius: 5px; padding: 0.5em 1em; font-family: 'Roboto', sans-serif; font-size:1.1em; margin: -3px 0 0 0 }
+    footer .right a.experimental:hover { opacity: .7; text-decoration: none; }
+
+    footer .right a.facebook p { float: left; }
+    footer .right a.facebook p:hover { text-decoration: underline; }
+    footer .right a.facebook p span { color: #fec901 }
+
+    footer .right .p3k { float:right; margin: 0; opacity: .30 }
+    footer .right .p3k:hover { opacity: 1 }
+    footer .right .p3k img { float:left; width: 27px }
+
+
+
+
+
+
+
+
+/* ---------------- AREA DE CONTATO ---------------- */
+    #area_contato {  }
+    #area_contato .black { width: 100%; height: 100%; background: #000; opacity: 0.9; filter: alpha(opacity =90); position: fixed; top: 0; left: 0; z-index: 9000 }
+    #area_contato .close { position: absolute; right: 10px; top: 10px; margin: 0 !important; font-size: 3.5em; font-weight: 100; padding: 0.9em 1.2em; cursor: pointer; }
+
+    #area_contato .contato-box { width: 80%; height: auto; background: #FFF; position: fixed; top: 0; left: 0; margin: 5% 0 0 10%; z-index: 10000 }
+    #area_contato .contato-box h2 { padding: 1.2em 0; text-align: left; margin-left: 6.50%; }
+
+    #area_contato form { margin:0 6.82% 5% 6.82%; width: 52.87%; height: auto; float: left; }
+    #area_contato form .left { width: 47.72%; margin: 0 4.34% 2% 0; float: left; }
+    #area_contato form .right { width: 47.72%; margin: 0 0 2% 0; float: left; }
+    #area_contato form .full { width: 100%; margin: 0 0 2% 0; float: left; }
+    #area_contato form .full input { width: 97.5%; padding: 0 0 0 2% !important; }
+    
+    #area_contato form label { width: 99%; font-size: 1.6em; letter-spacing: 0.1em;}
+    #area_contato form .field { width: 95%; background: #f9f9f9; border: 1px solid #e1e1e1; float: left; height: 36px; font-size: 1.2em; font-style: italic; letter-spacing: 0.2em; color: #666; padding: 0 0 0 4%; margin: 2% 0 0 0;}
+  #area_contato form input:focus { border: 1px solid #bbb; }
+
+    #area_contato form textarea { width: 97.5% !important; height: 80px !important; padding: 2% 0 0 2% !important }   
+
+    #area_contato h5 { font-size: 1.6em; width: 21.70%; height: auto; float: left; line-height: 1.5; }
+
+    #area_contato h5 .btn { border: 0; width: 100%; font-size: 1.2em; margin: 59% 0 0 0; float: left; font-weight: 300; letter-spacing: 0.1em; cursor: pointer; }
+
+
+/* ---------------- AREA DE CONTATO END ---------------- */
+
+
+
+
+
+
+/* ---------------- MENSAGEM DE SUCESSO  ---------------- */
+
+#mensagem-sucesso { position: fixed; bottom: 0; left: 0; width: 100%; background: #557747; z-index: 99999; box-shadow: 5px 5px 80px #111; }
+#mensagem-sucesso h2 { padding: 2.0% 5% 0 5%; font-size: 2.2em; color: #f9f9f9; text-align: left; letter-spacing: 0.2em;  }
+#mensagem-sucesso .btn-fechar { color: #FFF; float: right; font-size: 3.0em; font-weight: 100; padding: 1.5% 2.5%; cursor: pointer; }
+#mensagem-sucesso .btn-fechar:hover { background: #4D6642; }
+
+
+
+
+
+/* ---------------- MENSAGEM DE SUCESSO END ---------------- */
+
+
+
+
+
+/* ---------------- ANIMATIONS    ---------------- */
+
+
+.animated { 
+    -webkit-animation-duration: 0.8s; 
+    animation-duration: 0.8s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: linear; 
+    animation-timing-function: linear; 
+} 
+.animated2 { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: linear; 
+    animation-timing-function: linear; 
+} 
+.animated3 { 
+    -webkit-animation-duration: 1.2s; 
+    animation-duration: 1.2s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: linear; 
+    animation-timing-function: linear; 
+} 
+.animated4 { 
+    -webkit-animation-duration: 4s; 
+    animation-duration: 4s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-out; 
+    animation-timing-function: ease-out; 
+} 
+
+@-webkit-keyframes fadeInDown { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(-20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInDown { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(-20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+
+.fadeInDown { 
+    -webkit-animation-name: fadeInDown; 
+    animation-name: fadeInDown; 
+}
+
+
+@-webkit-keyframes fadeOutDown { 
+    0% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+    100% { 
+        opacity: 0; 
+        -webkit-transform: translateY(20px); 
+    } 
+} 
+@keyframes fadeOutDown { 
+    0% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+    100% { 
+        opacity: 0; 
+        transform: translateY(20px); 
+    } 
+} 
+.mouse:hover .fadeInDown { 
+    -webkit-animation-name: fadeOutDown; 
+    animation-name: fadeOutDown; 
+}
+
+
+
+
+
+@-webkit-keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+@keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+.fadeIn { 
+    -webkit-animation-name: fadeIn; 
+    animation-name: fadeIn; 
+}

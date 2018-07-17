@@ -1,0 +1,316 @@
+@charset "utf-8";
+/* CSS Document */
+
+/************************************************************************************
+                                    RESPONSIVO
+*************************************************************************************/
+        @media (max-width:1480px) {
+          .row { width: 90%; margin: 0 5%; }
+
+        }
+
+
+        @media (max-width:1100px) {
+            header#desktop .right a {  margin: 1px 1.2em 0 0; font-size: 1.1em }
+            header#desktop .right a.facebook { margin: -6px 1.2em 0 0;   }
+
+        }
+
+        @media (max-width:980px) {
+
+          header#desktop { display:none !important; }
+          header#mobile { display:block !important; }
+
+          #adotaveis #listagem .menuLateral.fixed { position: absolute !important; }
+
+
+
+
+
+          #ops header#desktop { display: block !important; }
+
+
+
+
+
+
+          #adotaveis #container {height: auto; max-height: 360px; padding: 64px 0 0 0; margin: 0 0 0 0;}
+          .scene .lay4 {margin-top: -0px !important;}
+          .scene .lay1 {margin-top: 0 !important;}
+
+
+          #adotaveis #listagem .content ul {width: 90%; margin:0 0 0 5%;}
+          #adotaveis #listagem .content ul li { width: 44%; margin: 0 3% 4%;}
+          
+          footer .right a { margin: 0 2em 1em 0;}
+
+          #adotaveis-interna .top h2 {font-size: 7em;}
+          #adotaveis-interna .top figure { top: 130px;}
+
+          #adotaveis-interna .content ul {width: 100% } 
+          #adotaveis-interna .content ul p {margin: 0}       
+          #adotaveis-interna .content { padding: 8em 0;}
+
+          #adotaveis-interna .content .images ul.image-one {}
+          #adotaveis-interna .content .images ul.image-two { width: 48%}
+          #adotaveis-interna .content .images ul.image-tree { width: 48%}
+          #adotaveis-interna .content .images ul.image-tree figure { height: 340px;}
+
+
+          #adotaveis-interna .content .images ul:last-child {margin: 0 !important;}
+
+          #adotaveis-interna .content .right { float: left; }
+
+
+
+          #lojinha #container {height: auto; max-height: 290px; padding: 64px 0 0 0; margin: 0 0 0 0;}
+          #lojinha #listagem #setor1 figure {    width: 55%;}
+          #lojinha #listagem #setor1 .swiper-slide .right {width: 45%;}
+          #lojinha #listagem #setor1 .swiper-container-horizontal > .swiper-pagination {width: 45%;}
+
+          #lojinha #listagem #setor1 ul li .box .bottom {display: none}
+
+
+          #eventos #container {height: auto; max-height: 290px; padding: 64px 0 0 0; margin: 0 0 0 0;}
+          #eventos #content ul {width: 100%; margin: 0 0 10% 0; padding: 0 0 10% 0; }
+
+
+          #suasacola { font-size: 80% }
+          #suasacola .box .produto-sacola .two { padding: 0; }
+
+          .ajuda .center {     width: 80%;   margin: 70px 0 10% 5%;}
+
+
+          #ajudar #container {height: auto; max-height: 290px; padding: 64px 0 0 0; margin: 0 0 0 0;}
+          #ajudar .content ul li { width: 100%; margin: 0}
+          #ajudar #rosa ul li { width: 100%; margin: 0}
+          #ajudar .content ul li a.btn {clear: both;}
+
+
+          #quemsomos #container {height: auto; max-height: 290px; padding: 64px 0 0 0; margin: 0 0 0 0;}
+
+          #quemsomos .content .left { width: 100%; margin: 0 }
+          #quemsomos .content ul.right { width: 100%; margin: 0 }
+
+
+          #faleconosco #container {height: auto; max-height: 290px; padding: 64px 0 0 0; margin: 0 0 0 0;}
+
+          #faleconosco .content .left { width: 100%; margin: 0 }
+          #faleconosco .content ul.right { width: 100%; margin: 0 }
+          #faleconosco .content .left h2 {font-size: 3.8em;}
+
+
+
+          #adotaveis #listagem .content h2 { padding: 0 0 0 14%; width: 86%;}
+
+
+        }
+
+        @media (max-width:800px) {
+          #lojinha #listagem #setor1 { width: 90%  }
+          #lojinha #listagem #setor1 ul li {    width: 46%;}
+          #lojinha #listagem #setor1 ul li:first-child {  margin: 0 2% 4%;  }
+          #lojinha #listagem #setor1 ul li:last-child {  margin: 0 2% 4%;  }
+
+
+           #suasacola .box .topo { display: none }
+           #suasacola .produto-sacola .one { width: 30% }
+           #suasacola .produto-sacola .two { width: 70% }
+           #suasacola .produto-sacola .tre { width: 100% }
+           #suasacola .produto-sacola .four { width: 100% }
+           #suasacola .produto-sacola .produto-sacola .tre p { margin: 1em 0 0 0 }
+           #suasacola .produto-sacola .produto-sacola { padding: 2em 0; }
+           #suasacola .box .produto-sacola .two p { font-size: 110% } 
+
+           #suasacola .box .metodos li { width: 50% }
+           #suasacola .box .metodos li:last-child { width: 100% } 
+           #suasacola .box .metodos li select { margin: 1.2em 0; }
+           #suasacola .box .final div { width: 100%; }
+           #suasacola .box .final a { clear: both; }
+           #suasacola .box .final .encomendar { float: left; }
+
+          .ajuda .center { font-size: 80%}
+          .ajuda .center .left img, .ajuda .center .right img { width: 20%; }
+          .ajuda p br { display: none }
+
+          #quemsomos .content ul.names li { width: 40% }
+          #quemsomos .content ul.midias li { width: 45% }
+          #quemsomos .content ul.parceiros li { width: 45% }
+
+
+          #faleconosco .content .left ul.box li.questao { font-size: 1.3em; }
+          #faleconosco .content .left ul.box li.resposta { font-size: 1.1em; }
+
+
+          #lojinha #listagem #setor1 ul li { width: 46% !important }
+
+        }
+
+        @media (max-width:650px) {
+
+          #adotaveis #listagem .content ul {width: 90%; margin:0 0 0 10%;}
+
+          #menuLateral .mobile { display: block !important }
+          #adotaveis #listagem .menuLateral.right { display: none !important }
+
+          #adotaveis-interna .top h2 {font-size: 4em;}
+          #adotaveis-interna .top figure { width: 120px; height: 120px; margin: 0 0 0 -60px; top: 90px;}
+          #adotaveis-interna .top {height: 240px;}
+
+          #adotaveis-interna .content { padding: 6em 0; font-size: 80%}
+
+          #adotaveis-interna .content .icones div { height: 180px;}
+
+          .lojinha-interna #setor1 .produto .right {    font-size: .8em;}
+          .lojinha-interna #setor1 .produto .left a img {width: 40px !important;    height: 40px !important;    border: 5px solid white;}
+
+
+
+          #ajudar .content ul li p { font-size: 0.7em  }
+          #ajudar .content ul li h2 { font-size: 3.0em; }
+          #ajudar .content ul li a.btn { font-size: 0.7em; }
+          #ajudar #rosa ul li p {font-size: 1.2em }
+          #ajudar #rosa ul li h3 { font-size: 2em }
+          #ajudar .content ul li.agenda a {left: 10px; bottom:40px; margin: 0 0 0}
+
+
+          #faleconosco .content .left ul.box {background:#FFF !important;}
+          #faleconosco .content .left ul.box:hover {background:#FFF !important;}
+          #faleconosco .content .left h2 { font-size: 2.8em; }
+
+
+
+        }
+        @media (max-width:600px) {
+
+          #adotaveis #listagem .content ul li { width: 100%; margin: 0 0 4%;}
+
+          #lojinha #listagem #setor1 { width: 80%  }
+
+          #lojinha #listagem #setor1 .swiper-slide .right {width: 100%; height: 50% }
+          #lojinha #listagem #setor1 figure {    width: 100%; height: 50%}
+          #lojinha #listagem #setor1 .swiper-slide .right div { margin: 16% 10% ;}
+          #lojinha #listagem #setor1 .swiper-container-horizontal > .swiper-pagination {width: 100%}
+
+
+          .lojinha-interna #setor1 .produto .left {width: 100%}
+          .lojinha-interna #setor1 .produto .right {width: 100%}
+
+
+          #eventos #content ul .left { width: 100%; float: right; margin: 0 0 0 4% }
+          #eventos #content ul .right { width: 100%; float: left;  }
+
+          #eventos #content ul .right figure {height: 220px}
+
+
+          #adotaveis #listagem .content h2 { padding: 0 0 0 18%; width: 82%; font-size: 2em; 
+    margin: -6px 2% 3% 0; height: 52px;}
+
+
+
+          #ops .content figure {width: 70%; margin: 0 0 0 15%; }
+          #ops .content .left {font-size: 75%}
+          #ops .content .left h2 { font-size: 3em; line-height: 1.1; margin: 5% 0}
+
+
+        }
+        @media (max-width:500px) {
+
+          #adotaveis #listagem .content ul {width: 85%; margin:0 0 0 15%; }
+          #adotaveis #listagem .content ul li { height: 240px; margin: 0 0 10%;}
+
+          #quemsomos .content .padd figure { height: 180px;}
+          #quemsomos .content ul.names li { font-size: 1.0em;}
+
+          #quemsomos .content ul.midias li { width: 95% }
+          #quemsomos .content ul.parceiros li { width: 95% }
+
+          #quemsomos .content h3 { font-size: 2.3em }
+          #quemsomos .content ul.right li h3 { font-size: 2.3em }
+
+          #faleconosco .content ul.right li h3 { font-size: 2.3em }
+
+
+          #adotaveis-interna .content .images ul.image-one { width: 100%; margin: 0 0 4% 0 !important; }
+          #adotaveis-interna .content .images ul.image-two { width: 100%; margin: 0 0 4% 0 !important; }
+          #adotaveis-interna .content .images ul.image-tree { width: 98%}
+          #adotaveis-interna .content .images figure {    height: 300px;}
+        }
+        @media (max-width:420px) {
+
+           header#mobile { zoom:0.75;  }
+           header#mobile .left h1 img {    margin: 12px 0 0 93px;}
+           header#mobile .right { margin: 23px 1em 0; }
+
+           header#mobile .right a.experimental { font-size:0.9em; margin: -2px 0 0 0 }
+
+           #adotaveis #container {    padding: 45px 0 0 0;}
+
+           #adotaveis #listagem .menuLateral { zoom:.7; }
+          #adotaveis #listagem .content ul {width: 80%; margin:0 0 0 20%; }
+
+
+          #adotaveis-interna .top h2 {  font-size: 2.5em;  margin: 60px 0 0;}
+          #adotaveis-interna .top figure { width: 90px; height: 90px; margin: 0 0 0 -45px; top: 60px;}
+          #adotaveis-interna .top {height: 170px;}
+
+
+          
+
+
+          #adotaveis-interna .content .right a.adotar { clear: both; margin: 2em 0 0 0}
+
+           #lojinha #listagem .menuLateral { zoom:.7; }
+           #lojinha #listagem #setor1 h2 {    font-size: 2em;}
+           #lojinha #listagem #setor1 .swiper-slide {height: 360px }
+           #lojinha #listagem #setor1 .swiper-slide .right div {
+                margin: 14% 10%;
+                font-size: 0.7em;
+            }
+
+            #lojinha #listagem #setor1 ul li {width: 98%;}
+
+            #lojinha #listagem #setor1 ul li .image figure {    height: 110px;}
+            #lojinha #listagem #setor1 ul li .box .top i {margin: 19px 0 0 -18px;}
+
+
+            .lojinha-interna #setor1 #bread {font-size: 0.9em}
+
+
+            .ajuda .center .left, .ajuda .center .right { width: 100%; border: 0 }
+
+
+            .adotarer .adotar {    margin: 0 0 0 10% !important;}
+            .adotarer .center .right {    margin: 2.5% 0 !important;}
+
+
+            #adotaveis #listagem .content h2 { padding: 0 0 0 25%; width: 75%; font-size: 1.3em; 
+    margin: -1px 2% 3% 0; height: 37px;}
+
+
+            #lojinha #listagem #setor1 ul li { width: 96% !important; height: auto !important }
+
+
+
+        }
+
+/************************************************************************************
+                                    RESPONSIVO END
+*************************************************************************************/
+
+
+        @media (max-height:630px) {
+
+ 
+          #adotaveis #listagem .menuLateral {
+                zoom: .85;
+            }
+
+
+        }
+
+        @media (max-height:530px) {
+
+            header#mobile .header-fixo #menu .big a { padding: 2% 15%; font-size: 0.7em; }
+
+        }
