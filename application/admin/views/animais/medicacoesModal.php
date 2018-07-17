@@ -6,15 +6,24 @@
                 <h4 class="modal-title">Medicações</h4>
             </div>            
             <div class="modal-body">
-                <form id="medicacoesForm" class="formModal" role="form" action="<?= base_url() ?>admin.php/animais/salvarAlimentacaoEspecial" method="POST">
+                <form id="medicacoesForm" class="formModal" role="form" action="<?= base_url() ?>admin.php/animais/salvarMedicacao" method="POST">
+                    <input type="hidden" name="id_animal" value="<?= @$animal->id_animal ?>">
+                    <input type="hidden" name="id_prontuario" value="<?= @$prontuario->id_prontuario ?>">                    
                     <div class="form-group">
                         <label for="medicacao">Medicação</label>
-                        <input tabindex="1" class="form-control" name="medicacao" placeholder="Digite a medicação do animal" required="required">
+                        <input tabindex="1" class="form-control" name="descricao" placeholder="Digite a medicação do animal" required="required">
                     </div>
                     <div class="form-group">
                         <label for="uso">Uso</label>
                         <select tabindex="2" class="form-control" name="uso" required="required">
                             <option value="">Selecione</option>
+                            <option>Oral</option>
+                            <option>Injetável</option>
+                            <option>Nasal</option>
+                            <option>Oftálmica</option>
+                            <option>Retal</option>
+                            <option>Sublingual </option>
+                            <option>Dermatológica</option>
                         </select>
                     </div> 
                     <div class="form-group">
@@ -29,6 +38,8 @@
                         <label for="continuo">Contínuo</label>
                         <select tabindex="5" class="form-control" name="continuo" required="required">
                             <option value="">Selecione</option>
+                            <option value="1">Sim</option>
+                            <option value="0">Não</option>
                         </select>
                     </div> 
                     <div class="form-group">

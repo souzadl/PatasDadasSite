@@ -119,6 +119,7 @@ class Animais extends CI_Controller {
                 'doencasCronicas' => $this->prontuario->getDoencasCronicas(isset($pronturario->id_prontuario) ? $pronturario->id_prontuario : 0),
                 'alimentacaoEspecial' => $this->prontuario->getAlimentacaoEspecial(isset($pronturario->id_prontuario) ? $pronturario->id_prontuario : 0),
                 'deficienciasFisicas' => $this->prontuario->getDeficienciasFisicas(isset($pronturario->id_prontuario) ? $pronturario->id_prontuario : 0),
+                'medicacoes' => $this->prontuario->getMedicacoes(isset($pronturario->id_prontuario) ? $pronturario->id_prontuario : 0),
                     
             );
 
@@ -267,7 +268,36 @@ class Animais extends CI_Controller {
         } catch (Exception $e) {
             show_error($e->getMessage());
         }        
-    }    
+    } 
+    
+    function salvarMedicacao(){
+        try {
+            $this->load->model('medicacoes_model','medicacao');       
+            $dados['id_prontuario'] = $this->input->post('id_pronturario');
+            $dados['id_animal'] = $this->input->post('id_animal');
+            $dados['descricao'] = $this->input->post('descricao');
+            $dados['uso'] = $this->input->post('uso');
+            $dados['dosagem'] = $this->input->post('dosagem');
+            $dados['frequencia'] = $this->input->post('frequencia');
+            $dados['continuo'] = $this->input->post('continuo');
+            $dados['inicio'] = $this->StrToDate($this->input->post('inicio'));
+            $dados['termino'] = $this->StrToDate($this->input->post('termino'));
+            $this->medicacao->setMedicacao($dados);       
+            echo json_encode($dados);
+        } catch (Exception $e) {
+            show_error($e->getMessage());
+        }         
+    } 
+    
+    function apagarMedicacao($id){
+        try {
+            $this->load->model('medicacoes_model','medicacao');
+            $this->medicacao->delMedicacao($id);    
+            echo json_encode(true);
+        } catch (Exception $e) {
+            show_error($e->getMessage());
+        }        
+    }     
     
     private function StrToDate($data){
         $data = str_replace('/', '-', $data);

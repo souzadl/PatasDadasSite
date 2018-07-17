@@ -41,9 +41,8 @@
                     Medicações
                     <a href="#" data-toggle="modal" data-target="#medicacoesDialog"><i class="fa fa-plus-circle fa-fw"></i></a>
                 </div>    
-                <div class="panel-body">
-                    <!--
-                    <table>
+                <div class="panel-body">                    
+                    <table id="tableMedicacoes" class="table">
                         <thead>
                             <tr>
                                 <th>Medicação</th>
@@ -57,18 +56,20 @@
                             <tr>
                         </thead>
                         <tbody>
-                            <tr id="medicacoes_origem">
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td><a href="#"><i class="fa fa-trash"></i></a></td>
+                            <?php foreach (@$medicacoes as $medicacao): ?>
+                            <tr>
+                                <td><?= $medicacao->descricao?></td>
+                                <td><?= $medicacao->uso?></td>
+                                <td><?= $medicacao->dosagem?></td>
+                                <td><?= $medicacao->frequencia?></td>
+                                <td><?= $medicacao->continuo ? 'Sim' : 'Não' ?></td>
+                                <td><?= date('d/m/Y', strtotime($medicacao->inicio))?></td>
+                                <td><?= date('d/m/Y', strtotime($medicacao->termino))?></td>
+                                <td><a href="#" class="del" id="apagarMedicacao/<?= $medicacao->id ?>"><i class="fa fa-trash"></i></a></td>
                             </tr>
+                            <?php endforeach; ?>
                         </tbody>
-                    </table>-->
+                    </table
                 </div>
             </div>        
         </div>         

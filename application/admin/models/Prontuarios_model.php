@@ -52,7 +52,15 @@ class Prontuarios_model extends Generico_Model {
 
         $query = $this->db->get();
         return $query->result();        
-    }    
+    }  
+    
+    public function getMedicacoes($id_prontuario){
+        $where = array('id_prontuario' => $id_prontuario);
+        $this->db->select('*')->from('medicacoes')->where($where)->order_by('inicio', 'asc'); 
+
+        $query = $this->db->get();
+        return $query->result();        
+    }     
     
     public function setProntuario($data){
         $where = array('id_animal' => $data['id_animal']);
