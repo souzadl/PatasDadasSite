@@ -35,22 +35,26 @@
             responsive: true,
             "order": [[0, "desc"]]
         });
-
-        $('.add').click(function () {
-            idOrigem = '#' + $(this).attr('id') + '_origem';
-            myOri = $(idOrigem);
-            myDest = myOri.parent();
-
-            newObj = myOri.clone().appendTo(myDest);
-            if (newObj.is("div")) {
-                newObj.find('input.datepicker').removeClass('hasDatepicker').datepicker();
-            }
-            if (newObj.is("input") && newObj.hasClass('datepicker')) {
-                newObj.removeClass('hasDatepicker').datepicker();
+        
+        $('.del').click(function(){
+            if (confirm("Confirma a exclusão?")) {
+                var obj = $(this);
+                var url = '<?= base_url() ?>admin.php/animais/' + obj.attr('id');
+                $.ajax({
+                    url: url,
+                    type: "GET",
+                    dataType: "json",
+                    success: function (data, textStatus, jqXHR) {                    
+                        location.reload();
+                    },
+                    error: function (jqXHR, status, error) {
+                        console.log(status + ": " + error);
+                    }
+                }); 
             }
             return false;
         });
-        
+       
         $(".formModal").submit(function(e){            
             e.preventDefault();
             var form = $(this);
@@ -60,8 +64,10 @@
                 url: formURL,
                 type: "POST",
                 data: postData,
-                success: function (data, textStatus, jqXHR) {                    
-                    json = eval("(" + data + ")");
+                success: function (data, textStatus, jqXHR) { 
+                    $('.modal .close').click();   
+                    location.reload();
+                    /*json = eval("(" + data + ")");
                     $(':input').not(':button, :submit, :reset, :hidden, :checkbox, :radio').val('');                    
                     $('.modal .close').click();   
 
@@ -77,7 +83,7 @@
                     }    
                     if(form.attr("id") == "deficienciaFisicaForm"){
                         $('#lista_deficiencia_fisica').append("<li>"+json.descricao+" <a href=\"#\"><i class=\"fa fa-trash\"></i></a></li>");
-                    }                      
+                    } */                     
                 },
                 error: function (jqXHR, status, error) {
                     console.log(status + ": " + error);

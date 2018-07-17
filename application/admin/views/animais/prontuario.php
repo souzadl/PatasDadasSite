@@ -6,7 +6,7 @@
         <div class="col-lg-6" >
             <div class="panel panel-default" style="min-height: 289px;">
                 <div class="panel-heading">
-                    Histórico de peso
+                    Históricos de peso
                     <a href="#" data-toggle="modal" data-target="#historicoPesoDialog"><i class="fa fa-plus-circle"></i></a>
                 </div>    
                 <div class="panel-body">
@@ -23,7 +23,7 @@
                             <tr>
                                 <td><?= date('d/m/Y', strtotime($historico->data_afericao))  ?></td>
                                 <td><?= $historico->peso ?></td>
-                                <td><a href="#"><i class="fa fa-trash"></i></a></td>
+                                <td><a href="#" class="del" id="apagarHistoricoPeso/<?= $historico->id ?>"><i class="fa fa-trash"></i></a></td>
                             </tr>    
                             <?php endforeach; ?>
                         </tbody>

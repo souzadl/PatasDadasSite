@@ -7,6 +7,8 @@
             </div>            
             <div class="modal-body">
                 <form id="alimentacaoEspecialForm" class="formModal" role="form" action="<?= base_url() ?>admin.php/animais/salvarAlimentacaoEspecial" method="POST">
+                    <input type="hidden" name="id_animal" value="<?= @$animal->id_animal ?>">
+                    <input type="hidden" name="id_prontuario" value="<?= @$prontuario->id_prontuario ?>">                                        
                     <div class="form-group">
                         <label for="descricao">Descrição</label>
                         <input type="text" name="descricao" class="form-control" required="required">

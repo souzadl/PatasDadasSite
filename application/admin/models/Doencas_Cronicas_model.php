@@ -4,7 +4,7 @@ if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 require_once APPPATH.'models/Generico_Model.php';
 class Doencas_Cronicas_model extends Generico_Model {   
-    function __construct() {
+    public function __construct() {
         // Call the Model constructor
         parent::__construct();
         $this->tabela = 'doencas_cronicas';  
@@ -30,6 +30,10 @@ class Doencas_Cronicas_model extends Generico_Model {
         return $this->db->insert_id();
     }
  
+    public function delDoenca($id) {
+        $data['id'] = $id;
+        $this->apagar($data);
+    }
     
 }
 

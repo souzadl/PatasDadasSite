@@ -190,6 +190,16 @@ class Animais extends CI_Controller {
         }        
     }    
     
+    function apagarHistoricoPeso($id){
+        try {
+            $this->load->model('historicos_peso_model','historico');     
+            $this->historico->delHistorico($id);      
+            echo json_encode(true);
+        } catch (Exception $e) {
+            show_error($e->getMessage());
+        }        
+    }    
+    
     function salvarDoencaCronica(){
         try {
             $this->load->model('doencas_cronicas_model','doenca');       
@@ -202,13 +212,61 @@ class Animais extends CI_Controller {
             show_error($e->getMessage());
         }        
     }
+    
+    function apagarDoencaCronica($id){
+        try {
+            $this->load->model('doencas_cronicas_model','doenca');       
+            $this->doenca->delDoenca($id);      
+            echo json_encode(true);
+        } catch (Exception $e) {
+            show_error($e->getMessage());
+        }        
+    }
 
-    function salvarAlientacaoEspecial(){
-        
+    function salvarAlimentacaoEspecial(){
+        try {
+            $this->load->model('alimentacao_especial_model','alimentacao');       
+            $dados['id_prontuario'] = $this->input->post('id_pronturario');
+            $dados['id_animal'] = $this->input->post('id_animal');
+            $dados['descricao'] = $this->input->post('descricao');
+            $this->alimentacao->setAlimentacao($dados);       
+            echo json_encode($dados);
+        } catch (Exception $e) {
+            show_error($e->getMessage());
+        }         
+    }  
+    
+    function apagarAlimentacaoEspecial($id){
+        try {
+            $this->load->model('alimentacao_especial_model','alimentacao');      
+            $this->alimentacao->delAlimentacao($id);  
+            echo json_encode(true);
+        } catch (Exception $e) {
+            show_error($e->getMessage());
+        }        
     }    
     
     function salvarDeficienciaFisica(){
-        
+        try {
+            $this->load->model('deficiencias_fisicas_model','deficiencia');       
+            $dados['id_prontuario'] = $this->input->post('id_pronturario');
+            $dados['id_animal'] = $this->input->post('id_animal');
+            $dados['descricao'] = $this->input->post('descricao');
+            $this->deficiencia->setDeficiencia($dados);       
+            echo json_encode($dados);
+        } catch (Exception $e) {
+            show_error($e->getMessage());
+        }         
+    }    
+    
+    function apagarDeficienciaFisica($id){
+        try {
+            $this->load->model('deficiencias_fisicas_model','deficiencia');       
+            $this->deficiencia->delDeficiencia($id);    
+            echo json_encode(true);
+        } catch (Exception $e) {
+            show_error($e->getMessage());
+        }        
     }    
     
     private function StrToDate($data){

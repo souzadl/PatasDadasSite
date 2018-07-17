@@ -3,14 +3,14 @@
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 require_once APPPATH.'models/Generico_Model.php';
-class Historicos_Peso_model extends Generico_Model {   
+class Alimentacao_Especial_model extends Generico_Model {   
     public function __construct() {
         // Call the Model constructor
         parent::__construct();
-        $this->tabela = 'historicos_peso';  
+        $this->tabela = 'alimentacao_especial';  
     }    
     
-    public function setHistorico($data){
+    public function setAlimentacao($data){
         $this->db->trans_start();
         $idProntuario = trim($data['id_prontuario']);
         if(empty($idProntuario)){
@@ -23,14 +23,14 @@ class Historicos_Peso_model extends Generico_Model {
         
         $this->inserir($data);        
 
-        $this->session->set_flashdata('resposta', 'Histórico adicionado com sucesso.');	
+        $this->session->set_flashdata('resposta', 'Alimentação adicionada com sucesso.');	
         
         $this->db->trans_complete();
         
         return $this->db->insert_id();
     }
  
-    public function delHistorico($id) {
+    public function delAlimentacao($id) {
         $data['id'] = $id;
         $this->apagar($data);
     }    

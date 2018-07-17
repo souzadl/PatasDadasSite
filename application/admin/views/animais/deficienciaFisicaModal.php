@@ -3,10 +3,12 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Alimentação Especial</h4>
+                <h4 class="modal-title">Deficiência Física</h4>
             </div>            
             <div class="modal-body">
-                <form id="deficienciaFisicaForm" class="formModal" role="form" action="<?= base_url() ?>admin.php/animais/salvarAlimentacaoEspecial" method="POST">
+                <form id="deficienciaFisicaForm" class="formModal" role="form" action="<?= base_url() ?>admin.php/animais/salvarDeficienciaFisica" method="POST">
+                    <input type="hidden" name="id_animal" value="<?= @$animal->id_animal ?>">
+                    <input type="hidden" name="id_prontuario" value="<?= @$prontuario->id_prontuario ?>">                                                            
                     <div class="form-group">
                         <label for="descricao">Descrição</label>
                         <input type="text" name="descricao" class="form-control" required="required">

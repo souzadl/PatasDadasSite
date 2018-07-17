@@ -16,6 +16,11 @@ abstract class Generico_model extends CI_Model {
         $this->inserirLogAcoes("Insert", $this->db->last_query());
     }
     
+    protected function apagar($data){
+        $this->db->where($data);
+        $this->db->delete($this->tabela);
+        $this->inserirLogAcoes("Delete", $this->db->last_query());
+    }        
     
     protected function inserirLogAcoes($acao, $sql) {
         $id_usuario = $this->encrypt->decode($this->session->userdata('lavie_id_usuario'));
