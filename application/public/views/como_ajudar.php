@@ -15,7 +15,7 @@
             <ul class="box">
                 <li><h2>Doações Mensais</h2><i class="racao"></i></li>
                 <li>
-                    <p>Você sabia que pode ajudar o patas dadas com doações mensais a partir de 1 real?</p><br>
+                    <p>Você sabia que pode ajudar o Patas Dadas com doações mensais a partir de 1 real?</p><br>
                     <a class="btn" href="https://apoia.se/patasdadas" target="_blank">quero apoiar o <b>Patas Dadas</b></a>
                 </li>
             </ul>    
